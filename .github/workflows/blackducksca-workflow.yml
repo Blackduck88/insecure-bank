@@ -31,7 +31,7 @@ jobs:
           mark_build_status: failure
           include_diagnostics: true
           blackducksca_prComment_enabled: true
-          blackducksca_fixpr_enabled: true
-          blackducksca_reports_sarif_create: false
-          blackducksca_upload_sarif_report: false
           github_token: ${{ secrets.GH_TOKEN }}
+          blackducksca_fixpr_enabled: true
+          blackducksca_reports_sarif_create: true
+          blackducksca_upload_sarif_report: true
